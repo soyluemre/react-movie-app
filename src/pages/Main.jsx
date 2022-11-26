@@ -38,7 +38,7 @@ const Main = () => {
   };
   return (
     <>
-      <form className="flex justify-center p-2" onSubmit={handleSubmit}>
+      <form className="flex justify-center p-2 mt-16" onSubmit={handleSubmit}>
         <input
           type="search"
           className="search-input w-80 h-8 rounded-md outline-none border p-5 m-2"

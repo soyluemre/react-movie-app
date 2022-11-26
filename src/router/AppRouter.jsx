@@ -12,7 +12,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<LoginProvider />}>
+        <Route path="/react-movie-app" element={<LoginProvider />}>
           <Route path="" element={<Main />} />
           <Route path="details/:id" element={<PrivateRouter />}>
             <Route path="" element={<MovieDetail />} />

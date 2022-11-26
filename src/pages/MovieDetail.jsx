@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import VideoSection from "../components/VideoSection";
 
 const MovieDetail = () => {
   const [movieDetails, setMovieDetails] = useState("");
@@ -28,14 +27,12 @@ const MovieDetail = () => {
       .then((res) => setMovieDetails(res.data))
       .catch((error) => console.log(error));
   }, [movieDetailBaseUrl]);
-  const videoKey = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`;
 
   return (
-    <div className="container mx-auto py-5">
+    <div className="container mx-auto py-5 mt-16">
       <h1 className="text-center text-red-500 font-bold text-2xl">{title}</h1>
       <hr />
-      {videoKey && <VideoSection videoKey={videoKey} />}
-      <div className="container flex justify-center px-10">
+      <div className="container mt-6 flex justify-center px-10">
         <div className="flex flex-col lg:flex-row max-w-6xl rounded-lg bg-gray-300 shadow-lg">
           <img
             className=" lg:w-1/3 h-96 lg:h-[600px] object-cover rounded-t-lg md:rounded-none md:rounded-l-lg"
