@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       <nav className="w-full flex flex-row items-center justify-evenly bg-rose-700 rounded-b-lg text-white shadow-lg navbar navbar-expand-lg fixed-top">
         <div className="p-2 container-fluid w-full flex items-center justify-between px-3">
-          <Link className="text-2xl logo-img" to="/">
+          <Link className="text-2xl logo-img" to="/react-movie-app">
             <img width="70px" src={logo} alt="logo" />
           </Link>
 
