@@ -7,12 +7,7 @@ import logo from "../img/cinema.png";
 import Switch from "./Switch";
 
 const Navbar = () => {
-  //! CustomHook
-  //! const { currentUser } = useAuthContext();
-
   const { currentUser } = useContext(AuthContext);
-  // const currentUser = {displayName};
-  // const currentUser = false;
   return (
     <>
       <nav className="w-full flex flex-row items-center justify-evenly bg-rose-700 rounded-b-lg text-white shadow-lg navbar navbar-expand-lg fixed-top">
@@ -21,10 +16,7 @@ const Navbar = () => {
             <img width="70px" src={logo} alt="logo" />
           </Link>
 
-          {/* Collapsible wrapper */}
-          {/* Right elements */}
           <div className="flex items-center relative">
-            {/* Icon */}
             <Switch />
             {currentUser && (
               <h5 className="mr-2 capitalize">{currentUser?.displayName}</h5>
@@ -75,7 +67,6 @@ const Navbar = () => {
                   {currentUser && (
                     <span
                       className="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
-                      href="#"
                       role="button"
                       onClick={() => logOut()}
                     >
@@ -86,7 +77,6 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          {/* Right elements */}
         </div>
       </nav>
       <div className="h-[100px]"></div>
