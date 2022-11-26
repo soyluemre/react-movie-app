@@ -47,7 +47,7 @@ export const createUser = async (email, password, navigate, displayName) => {
     await updateProfile(auth.currentUser, {
       displayName: displayName,
     });
-    navigate("/react-movie-app");
+    navigate("/");
     toastSuccessNotify("Registered successfully!");
     console.log(userCredential);
   } catch (error) {
@@ -61,7 +61,7 @@ export const createUser = async (email, password, navigate, displayName) => {
 export const signIn = async (email, password, navigate) => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
-    navigate("/react-movie-app");
+    navigate("/");
     toastSuccessNotify("Logged in successfully!");
   } catch (error) {
     toastErrorNotify(error.message);
@@ -96,7 +96,7 @@ export const signUpWithGoogle = (navigate) => {
   //? Açılır pencere ile giriş yapılması için kullanılan firebase metodu
   signInWithPopup(auth, provider)
     .then((result) => {
-      navigate("/react-movie-app");
+      navigate("/");
       toastSuccessNotify("Logged in successfully!");
     })
     .catch((error) => {
