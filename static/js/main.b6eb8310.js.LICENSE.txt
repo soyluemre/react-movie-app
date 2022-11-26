@@ -146,7 +146,3 @@
  */
 
 //! AYRI STATELER
-
-//! CustomHook
-
-//! const { currentUser } = useAuthContext();
