@@ -1,6 +1,7 @@
 # React Movie App
 
- Live --> https://soylemre.github.io/react-movie-app/
+ Live --> https://soyluemre.github.io/react-movie-app/
+ 
 
 # I created using these constructs
 
