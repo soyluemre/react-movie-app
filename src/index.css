@@ -186,4 +186,8 @@ body {
   .user-img {
     width: 40px;
   }
+
+  .link-btn {
+    margin-left: 2.4rem;
+  }
 }

@@ -31,11 +31,12 @@ const MovieDetail = () => {
   const videoKey = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`;
 
   return (
-    <div className="container px-10 mx-auto py-5">
-      <h1 className="text-center text-white text-3xl">{title}</h1>
+    <div className="container mx-auto py-5">
+      <h1 className="text-center text-red-500 font-bold text-2xl">{title}</h1>
+      <hr />
       {videoKey && <VideoSection videoKey={videoKey} />}
       <div className="container flex justify-center px-10">
-        <div className="flex flex-col lg:flex-row max-w-6xl rounded-lg bg-gray-100 shadow-lg">
+        <div className="flex flex-col lg:flex-row max-w-6xl rounded-lg bg-gray-300 shadow-lg">
           <img
             className=" lg:w-1/3 h-96 lg:h-[600px] object-cover rounded-t-lg md:rounded-none md:rounded-l-lg"
             src={poster_path ? baseImageUrl + poster_path : defaultImage}
@@ -61,7 +62,7 @@ const MovieDetail = () => {
               <li className="px-6 py-2 border-gray-400 w-full rounded-t-lg">
                 <Link
                   to={-1}
-                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-10 rounded-lg"
+                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-5 rounded-lg border border-red-500 link-btn"
                 >
                   Go Back
                 </Link>
