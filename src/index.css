@@ -35,11 +35,14 @@ body {
   max-width: 100%;
 }
 
+.movie-detail {
+  height: 100%;
+}
 .movie-over {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
   color: #000;
-  bottom: 0;
+  bottom: 3.4rem;
   left: 0;
   right: 0;
   overflow: auto;
@@ -198,5 +201,8 @@ body {
 
   .btn {
     width: 100px;
+  }
+
+  .movie-detail {
   }
 }
