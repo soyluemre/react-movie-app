@@ -30,7 +30,9 @@ const MovieDetail = () => {
 
   return (
     <div className="movie-detail container mx-auto py-5 mt-16">
-      <h1 className="text-center text-red-500 font-bold text-2xl">{title}</h1>
+      <h1 className="text-center mt-4 text-red-500 font-bold text-2xl">
+        {title}
+      </h1>
       <hr />
       <div className="container mt-6 flex justify-center px-10">
         <div className="flex flex-col lg:flex-row max-w-6xl rounded-lg bg-gray-300 shadow-lg">
@@ -39,7 +41,7 @@ const MovieDetail = () => {
             src={poster_path ? baseImageUrl + poster_path : defaultImage}
             alt="poster"
           />
-          <div className="p-6 flex flex-col justify-between">
+          <div className="p-6 flex flex-col justify-between overflow-y-scroll">
             <div>
               <h5 className="text-gray-900 text-xl font-medium mb-2">
                 Overview

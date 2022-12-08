@@ -36,7 +36,7 @@ body {
 }
 
 .movie-detail {
-  height: 1000px;
+  height: 100vh;
 }
 
 .movie-over {
@@ -202,5 +202,9 @@ body {
 
   .btn {
     width: 100px;
+  }
+
+  .movie-detail {
+    height: 100%;
   }
 }
